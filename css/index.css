@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -62,16 +62,56 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+.nav-bar{
+	/* border: 5px solid green; */
+	width: 70%;
+    margin: 0 auto;
+	box-sizing: content-box;
+}
+
+
+ul {
+	/* border: 5px solid blue; */
+    width: 100%;
+    padding: 2% 0% 0% 4%;
+	display:flex;
+	justify-content: space-around;
+}
+li {
+    padding-right: 9%;
+}
+
+li > a {
+	color: black;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.img-header {
+	margin-bottom: 4%;
+}
+
+#jumbo{
+	width: 100%;
+}
+
+#jumbo-about {
+	width: 100%;
+}
+
 p {
     line-height: 1.4;
 }
 
 .container {
-    width: 800px;
+    /* width: 800px; */
+	width: 70%;
     margin: 0 auto;
+	/* border: 5px solid red; */
 }
 
 .top-content {
+	/* border: 5px solid blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -80,9 +120,10 @@ p {
 }
 
 .top-content .text-container {
+	/* border: 5px solid red; */
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -95,6 +136,74 @@ p {
     margin-bottom: 0;
 }
 
+.about-p{
+	margin-bottom: 2%;
+	padding: 0% 2% 4% 2%;
+	border-bottom: 2px dashed grey;
+}
+
+.about-p-footer{
+	padding: 0% 2% 4% 2%;
+}
+
+#boxone.box {
+	 background-color: teal;
+}
+#boxtwo.box {
+	 background-color: gold;
+}
+#boxthree.box {
+	 background-color: cadetblue;
+}
+#boxfour.box {
+	 background-color: coral;
+}
+#boxfive.box {
+	 background-color: crimson;
+}
+#boxsix.box {
+	 background-color: forestgreen;
+}
+#boxsev.box {
+	 background-color:darkorchid;
+}
+#boxe.box {
+	 background-color: hotpink;
+}
+#boxn.box {
+	 background-color: indigo;
+}
+#boxt.box {
+	 background-color: dodgerblue;
+}
+
+.flex-container{
+	/* border: 3px solir green; */
+	display: flex;
+	margin: 5% 0 2% 0% ;
+	justify-content: space-around;
+
+}
+
+.box-r{
+margin: 0% 0% 2% 2%;
+padding-bottom: 1%;
+border-bottom: 1px dashed black;
+}
+.box-l{
+margin: 0% 2% 2% 0%;
+padding-bottom: 1%;
+border-bottom: 1px dashed black;
+}
+
+.button	{
+	border-color: solid black;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	padding: 3% 4%;
+}
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -104,9 +213,9 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,8 +236,9 @@ p {
 }
 
 footer {
-    width: 100%;
+
     background: black;
+    margin: 0 auto;
 }
 
 footer nav {
